@@ -13,18 +13,18 @@ namespace LocalDinner
         public string City { get; set; }
         public string Category { get; set; }
         public int NumberOfSeats { get; set; }
-        public double OpeningHours { get; set; }
+        public string Telephone { get; set; }
         #endregion
 
         #region Constructor
         
-        public Restaurant(string name, string city, string category, int numberOfSeats, double openingHours)
+        public Restaurant(string name, string city, string category, int numberOfSeats, string telephone)
         {
             Name = name;
             City = city;
             Category = category;
             NumberOfSeats = numberOfSeats;
-            OpeningHours = openingHours;
+            Telephone = telephone;
         }
         #endregion 
 
