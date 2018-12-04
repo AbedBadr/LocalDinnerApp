@@ -17,6 +17,27 @@
         <Image HorizontalAlignment="Left" Height="102" Margin="1155,10,0,0" VerticalAlignment="Top" Width="97" Source="ms-appx:///Assets/United-Kingdom-Flag-Transparent.png"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="1269,7,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Assets/german glag.png"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="1390,10,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Assets/admin login.png"/>
+        <Button Content="About" HorizontalAlignment="Left" Margin="20,27,0,0" VerticalAlignment="Top" Height="65" Width="146" FontSize="20">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/BUTTON ABTHELPBACK.png"/>
+            </Button.Background>
+            <Button.FocusVisualPrimaryBrush>
+                <ImageBrush Stretch="Fill"/>
+            </Button.FocusVisualPrimaryBrush>
+        </Button>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="185,27,0,0" VerticalAlignment="Top" Height="65" Width="146" FontSize="20">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/BUTTON ABTHELPBACK.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="List" HorizontalAlignment="Left" Margin="350,27,0,0" VerticalAlignment="Top" Height="65" Width="146" FontSize="20">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/BUTTON ABTHELPBACK.png"/>
+            </Button.Background>
+            <Button.FocusVisualPrimaryBrush>
+                <ImageBrush Stretch="Fill"/>
+            </Button.FocusVisualPrimaryBrush>
+        </Button>
 
     </Grid>
 </Page>

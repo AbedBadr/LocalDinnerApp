@@ -136,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\admin login.png" />
+    <Content Include="Assets\BUTTON ABTHELPBACK.png" />
     <Content Include="Assets\Flag_of_Denmark.png" />
     <Content Include="Assets\german glag.png" />
     <Content Include="Assets\United-Kingdom-Flag-Transparent.png" />
