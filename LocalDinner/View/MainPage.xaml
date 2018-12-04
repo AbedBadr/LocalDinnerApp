@@ -9,6 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="105" Width="1480" FontSize="48" FontFamily="Segoe Script">
+            <Run Text="                          "/>
+            <Run FontSize="72" Text="Local Dinner"/>
+        </TextBlock>
+        <Image HorizontalAlignment="Left" Height="109" Margin="1040,3,0,0" VerticalAlignment="Top" Width="125" Source="ms-appx:///Assets/Flag_of_Denmark.png"/>
+        <Image HorizontalAlignment="Left" Height="102" Margin="1155,10,0,0" VerticalAlignment="Top" Width="97" Source="ms-appx:///Assets/United-Kingdom-Flag-Transparent.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="1269,7,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Assets/german glag.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="1390,10,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Assets/admin login.png"/>
 
     </Grid>
 </Page>

@@ -135,6 +135,10 @@
     <None Include="LocalDinner_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\admin login.png" />
+    <Content Include="Assets\Flag_of_Denmark.png" />
+    <Content Include="Assets\german glag.png" />
+    <Content Include="Assets\United-Kingdom-Flag-Transparent.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
