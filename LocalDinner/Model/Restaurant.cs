@@ -9,28 +9,31 @@ namespace LocalDinner
     class Restaurant
     {
         #region Properties
+
+        public int Id { get; set; }
         public string Name { get; set; }
         public string City { get; set; }
         public string Category { get; set; }
         public int NumberOfSeats { get; set; }
-        public double OpeningHours { get; set; }
+        public string Telephone { get; set; }
         #endregion
 
         #region Constructor
         
-        public Restaurant(string name, string city, string category, int numberOfSeats, double openingHours)
+        public Restaurant(int id, string name, string city, string category, int numberOfSeats, string telephone)
         {
+            Id = id;
             Name = name;
             City = city;
             Category = category;
             NumberOfSeats = numberOfSeats;
-            OpeningHours = openingHours;
+            Telephone = telephone;
         }
         #endregion 
 
         public override string ToString()
         {
-            return $"{nameof(Name)}: {Name}, {nameof(City)}: {City}, {nameof(Category)}: {Category}, {nameof(NumberOfSeats)}: {NumberOfSeats}, {nameof(OpeningHours)}: {OpeningHours}";
+            return $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(City)}: {City}, {nameof(Category)}: {Category}, {nameof(NumberOfSeats)}: {NumberOfSeats}, {nameof(Telephone)}: {Telephone}";
         }
     }
 }
