@@ -77,6 +77,7 @@
                     <Run Text="nner ApS er stiftet i 2017 af de 4 venner og datamatikere Miche"/>
                     <Run Text="l, Maher, Abed og Alex"/>
                     <Run Text=". Firmaets koncept er at det skal være muligt at resevere "/>
+                    <Run Text="."/>
                 </TextBlock>
             </StackPanel>
             <Button
