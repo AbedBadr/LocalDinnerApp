@@ -69,7 +69,7 @@
                 Margin="0,166,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top">
-                <TextBlock TextWrapping="Wrap" FontSize="22">
+                <TextBlock TextWrapping="Wrap" FontSize="22" SelectionChanged="TextBlock_SelectionChanged">
                     <Run Text="Local D"/>
                     <Run Text="i"/>
                     <Run Text="nner ApS er stiftet i 2017 af de 4 venner og datamatikere Miche"/>

@@ -10,7 +10,7 @@
 
     <ScrollViewer>
 
-        <Grid Height="1000" Width="1500">
+        <Grid Width="1500" Height="1000">
             <TextBlock
                 x:Name="LocalDinnerTextblock"
                 Width="1480"
