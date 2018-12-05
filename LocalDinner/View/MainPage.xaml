@@ -2,21 +2,313 @@
     x:Class="LocalDinner.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:LocalDinner"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:LocalDinner"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
 
-    <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="105" Width="1480" FontSize="48" FontFamily="Segoe Script">
-            <Run Text="                          "/>
-            <Run FontSize="72" Text="Local Dinner"/>
-        </TextBlock>
-        <Image HorizontalAlignment="Left" Height="109" Margin="1040,3,0,0" VerticalAlignment="Top" Width="125" Source="ms-appx:///Assets/Flag_of_Denmark.png"/>
-        <Image HorizontalAlignment="Left" Height="102" Margin="1155,10,0,0" VerticalAlignment="Top" Width="97" Source="ms-appx:///Assets/United-Kingdom-Flag-Transparent.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="1269,7,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Assets/german glag.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="1390,10,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Assets/admin login.png"/>
+    <ScrollViewer>
 
-    </Grid>
+        <Grid Height="1000" Width="1500">
+            <TextBlock
+                x:Name="LocalDinnerTextblock"
+                Width="1480"
+                Height="105"
+                Margin="10,10,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                FontFamily="Segoe Script"
+                FontSize="48"
+                TextWrapping="Wrap">
+                <Run Text="                          " />
+                <Run FontSize="72" Text="Local Dinner" />
+            </TextBlock>
+            <Button
+                x:Name="BtnAbout"
+                Width="146"
+                Height="65"
+                Margin="20,27,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="About"
+                FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/BUTTON ABTHELPBACK.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BtnHelp"
+                Width="146"
+                Height="65"
+                Margin="185,27,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Help"
+                FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/BUTTON ABTHELPBACK.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BtnList"
+                Width="146"
+                Height="65"
+                Margin="350,27,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="List"
+                FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/BUTTON ABTHELPBACK.png" Stretch="Fill" />
+                </Button.Background>
+
+            </Button>
+            <StackPanel
+                Width="1500"
+                Height="824"
+                Margin="0,166,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top">
+                <TextBlock
+                    x:Name="Search_for_restaurants_via_zip_textblock"
+                    HorizontalAlignment="Center"
+                    FontSize="36"
+                    SelectionChanged="TextBlock_SelectionChanged"
+                    Text="Search for Restaurants via City/Zipcode"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="Enter_city_name_here"
+                    Width="214"
+                    Height="48"
+                    Margin="643,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="Enter City/Zip here"
+                    TextChanged="TextBox_TextChanged"
+                    TextWrapping="Wrap" />
+                <TextBlock
+                    x:Name="Biggest_Cities"
+                    HorizontalAlignment="Center"
+                    FontSize="36"
+                    Text="Biggest Cities"
+                    TextWrapping="Wrap" />
+                <Button
+                    x:Name="BtnOdense"
+                    Width="316"
+                    Height="172"
+                    Margin="41,0,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Odense"
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/Odense.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+                <Button
+                    x:Name="BtnCopenhagen"
+                    Width="316"
+                    Height="172"
+                    Margin="409,-171,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Copenhagen"
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/København.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+                <Button
+                    x:Name="BtnRoskilde"
+                    Width="316"
+                    Height="172"
+                    Margin="773,-171,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Roskilde"
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/Roskilde.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+                <Button
+                    x:Name="BtnAalborg"
+                    Width="316"
+                    Height="172"
+                    Margin="1137,-171,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Aalborg"
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/Aalborg.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+                <TextBlock
+                    x:Name="WhathotnowTextblock"
+                    Width="371"
+                    Margin="576,0,553,0"
+                    HorizontalAlignment="Center"
+                    FontSize="36"
+                    Text="Whats Hot Right Now"
+                    TextWrapping="Wrap" />
+                <Button
+                    x:Name="GeraniumBtn"
+                    Width="316"
+                    Height="172"
+                    Margin="41,0,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Geranium"
+                    FocusVisualPrimaryBrush="#FFF6F6F6"
+                    FocusVisualSecondaryBrush="#99F7EEEE"
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/Geranium restau.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+                <Button
+                    x:Name="HøltzerBtn"
+                    Width="316"
+                    Height="172"
+                    Margin="409,-171,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Høltzer"
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/Høltzer restaurant.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+                <Button
+                    x:Name="RiversideBtn"
+                    Width="316"
+                    Height="172"
+                    Margin="773,-171,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Riverside"
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/Riverside Restaurant.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+                <Button
+                    x:Name="EGOBTN"
+                    Width="316"
+                    Height="172"
+                    Margin="1137,-171,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Ego "
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/EGO restaurant.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+                <Button
+                    x:Name="MOERBtn"
+                    Width="316"
+                    Height="172"
+                    Margin="41,0,0,0"
+                    HorizontalAlignment="Left"
+                    Content="MOER"
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/Restaurant MOER.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+                <Button
+                    x:Name="BarockBtn"
+                    Width="316"
+                    Height="172"
+                    Margin="409,-171,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Barock"
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/Barock Restaurant.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+                <Button
+                    x:Name="NautilusBtn"
+                    Width="316"
+                    Height="172"
+                    Margin="773,-171,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Nautilus"
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/Nautilus.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+                <Button
+                    x:Name="JamjamBtn"
+                    Width="316"
+                    Height="172"
+                    Margin="1137,-171,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Jamjam"
+                    FontSize="36"
+                    Foreground="White">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/JamJam Restau.png" Stretch="Fill" />
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+            <Button
+                x:Name="BtnDansk"
+                Width="110"
+                Height="101"
+                Margin="1037,10,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/Flag_of_Denmark.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BtnEnglish"
+                Width="96"
+                Height="88"
+                Margin="1159,19,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/United-Kingdom-Flag-Transparent.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BtnGerman"
+                Width="96"
+                Height="88"
+                Margin="1267,19,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/german glag.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BtnAdminLogin"
+                Width="96"
+                Height="88"
+                Margin="1383,19,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/admin login.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+
+        </Grid>
+    </ScrollViewer>
 </Page>
