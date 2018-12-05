@@ -8,6 +8,6 @@ namespace LocalDinner.Persistency
 {
     class PersistencyService
     {
-        //hello
+        
     }
 }
