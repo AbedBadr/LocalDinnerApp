@@ -40,7 +40,7 @@
                 x:Name="BtnHelp"
                 Width="146"
                 Height="65"
-                Margin="185,27,0,0"
+                Margin="188,27,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Content="Back"
@@ -101,6 +101,19 @@
                 Content="">
                 <Button.Background>
                     <ImageBrush ImageSource="ms-appx:///Assets/admin login.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BtnHelp_Copy"
+                Width="146"
+                Height="65"
+                Margin="299,54,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Back"
+                FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/BUTTON ABTHELPBACK.png" Stretch="Fill" />
                 </Button.Background>
             </Button>
 
