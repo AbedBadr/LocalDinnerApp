@@ -103,19 +103,6 @@
                     <ImageBrush ImageSource="ms-appx:///Assets/admin login.png" Stretch="Fill" />
                 </Button.Background>
             </Button>
-            <Button
-                x:Name="BtnHelp"
-                Width="146"
-                Height="65"
-                Margin="284,48,0,0"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Top"
-                Content="Back"
-                FontSize="20">
-                <Button.Background>
-                    <ImageBrush ImageSource="ms-appx:///Assets/BUTTON ABTHELPBACK.png" Stretch="Fill" />
-                </Button.Background>
-            </Button>
 
         </Grid>
 
