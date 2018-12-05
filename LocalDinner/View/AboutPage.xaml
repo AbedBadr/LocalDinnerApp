@@ -1,0 +1,131 @@
+﻿<Page
+    x:Class="LocalDinner.View.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LocalDinner.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid>
+            <TextBlock
+                x:Name="LocalDinnerTextblock"
+                Width="1480"
+                Height="105"
+                Margin="10,10,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                FontFamily="Segoe Script"
+                FontSize="48"
+                TextWrapping="Wrap">
+                <Run Text="                          " />
+                <Run FontSize="72" Text="Local Dinner" />
+            </TextBlock>
+            <Button
+                x:Name="BtnAbout"
+                Width="146"
+                Height="65"
+                Margin="20,27,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Back"
+                FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/BUTTON ABTHELPBACK.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BtnHelp"
+                Width="146"
+                Height="65"
+                Margin="185,27,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Help"
+                FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/BUTTON ABTHELPBACK.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BtnList"
+                Width="146"
+                Height="65"
+                Margin="350,27,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="List"
+                FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/BUTTON ABTHELPBACK.png" Stretch="Fill" />
+                </Button.Background>
+
+            </Button>
+            <StackPanel
+                Width="1500"
+                Height="824"
+                Margin="0,166,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top">
+                <TextBlock TextWrapping="Wrap" FontSize="22">
+                    <Run Text="Local D"/>
+                    <Run Text="i"/>
+                    <Run Text="nner ApS er stiftet i 2017 af de 4 venner og datamatikere Miche"/>
+                    <Run Text="l, Maher, Abed og Alex. "/>
+                </TextBlock>
+            </StackPanel>
+            <Button
+                x:Name="BtnDansk"
+                Width="110"
+                Height="101"
+                Margin="1037,10,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/Flag_of_Denmark.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BtnEnglish"
+                Width="96"
+                Height="88"
+                Margin="1159,19,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/United-Kingdom-Flag-Transparent.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BtnGerman"
+                Width="96"
+                Height="88"
+                Margin="1267,19,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/german glag.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BtnAdminLogin"
+                Width="96"
+                Height="88"
+                Margin="1383,19,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/admin login.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+
+        </Grid>
+
+    </Grid>
+</Page>
