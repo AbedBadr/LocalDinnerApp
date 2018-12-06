@@ -10,6 +10,10 @@
 
     <Grid>
         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="43*"/>
+                <ColumnDefinition Width="17*"/>
+            </Grid.ColumnDefinitions>
             <TextBlock
                 x:Name="LocalDinnerTextblock"
                 Width="1480"
@@ -19,7 +23,7 @@
                 VerticalAlignment="Top"
                 FontFamily="Segoe Script"
                 FontSize="48"
-                TextWrapping="Wrap">
+                TextWrapping="Wrap" Grid.ColumnSpan="2">
                 <Run Text="                          " />
                 <Run FontSize="72" Text="Local Dinner" />
             </TextBlock>
@@ -68,8 +72,14 @@
                 Height="824"
                 Margin="0,166,0,0"
                 HorizontalAlignment="Left"
-                VerticalAlignment="Top" >
-                <StackPanel HorizontalAlignment="Left" Height="355" Margin="505,100,0,0" Width="447" Background="#FFAAB6CE">
+                VerticalAlignment="Top" Grid.ColumnSpan="2" >
+                <StackPanel HorizontalAlignment="Left" Height="355" Margin="505,100,0,0" Width="447">
+                    <StackPanel.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFCBD8E4" Offset="0"/>
+                            <GradientStop Color="#FF0385FF" Offset="1"/>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
                     <TextBlock TextWrapping="Wrap" Text="Admin Login" FontSize="18"/>
                     <TextBox TextWrapping="Wrap" Text=""/>
                     <TextBlock TextWrapping="Wrap" Text="Password" Margin="0,0,-1053,0"/>
@@ -85,7 +95,7 @@
                 Margin="1037,10,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Content="">
+                Content="" Grid.ColumnSpan="2">
                 <Button.Background>
                     <ImageBrush ImageSource="ms-appx:///Assets/Flag_of_Denmark.png" Stretch="Fill" />
                 </Button.Background>
@@ -94,10 +104,10 @@
                 x:Name="BtnEnglish"
                 Width="96"
                 Height="88"
-                Margin="1159,19,0,0"
+                Margin="83.875,19,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Content="">
+                Content="" Grid.Column="1">
                 <Button.Background>
                     <ImageBrush ImageSource="ms-appx:///Assets/United-Kingdom-Flag-Transparent.png" Stretch="Fill" />
                 </Button.Background>
@@ -106,10 +116,10 @@
                 x:Name="BtnGerman"
                 Width="96"
                 Height="88"
-                Margin="1267,19,0,0"
+                Margin="191.875,19,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Content="">
+                Content="" Grid.Column="1">
                 <Button.Background>
                     <ImageBrush ImageSource="ms-appx:///Assets/german glag.png" Stretch="Fill" />
                 </Button.Background>
@@ -126,6 +136,7 @@
                     <ImageBrush ImageSource="ms-appx:///Assets/admin login.png" Stretch="Fill" />
                 </Button.Background>
             </Button>
+            <Image HorizontalAlignment="Left" Height="100" Margin="510,571,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Assets/SSL-Secure-Connection.png"/>
 
         </Grid>
 
