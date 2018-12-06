@@ -70,14 +70,31 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top">
                 <TextBlock
-                    FontSize="22"
+                    FontSize="24"
                     SelectionChanged="TextBlock_SelectionChanged"
-                    TextWrapping="Wrap">
-                    <Run Text="Local D" />
-                    <Run Text="i" />
-                    <Run Text="nner ApS er stiftet i 2017 af de 4 venner og datamatikere Miche" />
-                    <Run Text="l, Maher, Abed og Alex. " />
+                    TextWrapping="Wrap" FontStyle="Italic" FontFamily="Cambria" FontWeight="Bold" Height="166" Margin="21,0,0,0">
+                    <Run Text="Local Dinner ApS er stiftet i 2017 af Michel, Maher, Abed og Alexander. Vi har været kammerater siden studietiden, hvor vi læste "/>
+                    <Run Text="til "/>
+                    <Run Text="datamatikere. Vi er alle 4 utroligt madglade"/>
+                    <Run Text=", samtidig med at vi deler en vis interesse inden for IT."/>
+                    <Run Text=" "/>
+                    <LineBreak/>
+                    <Run Text="Vores fælles interesser var derfor grundlaget for opstarten af Local Dinn"/>
+                    <Run Text="er, "/>
+                    <Run Text="som er en app "/>
+                    <Run Text="hvor man hurtigt og nemt "/>
+                    <Run Text="kan få et "/>
+                    <Run Text="overblik over spisesteder det pågælende s"/>
+                    <Run Text="te"/>
+                    <Run Text="d man øn"/>
+                    <Run Text="s"/>
+                    <Run Text="ker. "/>
+                    <Run Text="Vi adskiller os fra ligne apps og hjemmesider, fordi vi tilbyder vores kunder fuld anonymitet når de reserverer bord fra "/>
+                    <Run Text="Local Dinner. Der bliver derfor ikke gemt nogen personligdata fra kunderne, "/>
+                    <Run Text="og det mener vi, hos Local Dinner, er vigtigt, fordi det værner om den personlige frihed"/>
+                    <Run Text="."/>
                 </TextBlock>
+                <Image x:Name="Maher" HorizontalAlignment="Left" Height="215" Margin="1072,0,0,0" Width="310"/>
             </StackPanel>
             <Button
                 x:Name="BtnDansk"
