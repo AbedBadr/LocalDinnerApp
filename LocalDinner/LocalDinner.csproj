@@ -121,7 +121,6 @@
     </Compile>
     <Compile Include="Model\Calendar.cs" />
     <Compile Include="Persistency\PersistencyService.cs" />
-    <Compile Include="Model\RestaurantCatalog.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\LocalDinnerViewModel.cs" />
     <Compile Include="View\AboutPage.xaml.cs">
