@@ -80,12 +80,12 @@
                             <GradientStop Color="#FF0385FF" Offset="1"/>
                         </LinearGradientBrush>
                     </StackPanel.Background>
-                    <TextBlock TextWrapping="Wrap" Text="Admin Login" FontSize="18"/>
-                    <TextBox TextWrapping="Wrap" Text=""/>
-                    <TextBlock TextWrapping="Wrap" Text="Password" Margin="0,0,-1053,0"/>
+                    <TextBlock x:Name="Adminlogintextblock" TextWrapping="Wrap" Text="Admin Login" FontSize="18"/>
+                    <TextBox x:Name="Adminusername" TextWrapping="Wrap" Text=""/>
+                    <TextBlock x:Name="Passwordblock" TextWrapping="Wrap" Text="Password" Margin="0,0,-1053,0"/>
                     <PasswordBox/>
-                    <Button Content="Login" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="42,20,233,0"/>
-                    <Button Content="Cancel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="225,-33,50,0"/>
+                    <Button x:Name="LoginBTN" Content="Login" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="42,20,233,0"/>
+                    <Button x:Name="CancelBTN" Content="Cancel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="225,-33,50,0"/>
                 </StackPanel>
             </StackPanel>
             <Button

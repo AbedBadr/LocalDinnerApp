@@ -119,6 +119,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Label.xaml.cs">
+      <DependentUpon>Label.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Persistency\PersistencyService.cs" />
     <Compile Include="Model\RestaurantCatalog.cs" />
     <Compile Include="Properties\Annotations.cs" />
@@ -147,6 +150,7 @@
   <ItemGroup>
     <Content Include="Assets\Aalborg.png" />
     <Content Include="Assets\admin login.png" />
+    <Content Include="Assets\backlove.png" />
     <Content Include="Assets\Barock Restaurant.png" />
     <Content Include="Assets\BUTTON ABTHELPBACK.png" />
     <Content Include="Assets\EGO restaurant.png" />
@@ -177,6 +181,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Label.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\AboutPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
