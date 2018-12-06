@@ -14,18 +14,18 @@ namespace LocalDinner
         public string Name { get; set; }
         public string City { get; set; }
         public string Category { get; set; }
-        public int NumberOfSeats { get; set; }
+        public int NoOfSeats { get; set; }
         #endregion
 
         #region Constructor
         
-        public Restaurant(int id, string name, string city, string category, int numberOfSeats)
+        public Restaurant(int id, string name, string city, string category, int noOfSeats)
         {
             Id = id;
             Name = name;
             City = city;
             Category = category;
-            NumberOfSeats = numberOfSeats;
+            NoOfSeats = noOfSeats;
         }
         #endregion
 
@@ -33,7 +33,7 @@ namespace LocalDinner
 
         public override string ToString()
         {
-            return $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(City)}: {City}, {nameof(Category)}: {Category}, {nameof(NumberOfSeats)}: {NumberOfSeats}";
+            return $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(City)}: {City}, {nameof(Category)}: {Category}, {nameof(NoOfSeats)}: {NoOfSeats}";
         }
         #endregion 
     }

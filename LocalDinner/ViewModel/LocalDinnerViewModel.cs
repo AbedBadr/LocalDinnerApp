@@ -28,15 +28,14 @@ namespace LocalDinner.ViewModel
         public string Name { get; set; }
         public string City { get; set; }
         public string Category { get; set; }
-        public int NumberOfSeats { get; set; }
-        public string Telephone { get; set; }
+        public int NoOfSeats { get; set; }
         #endregion
 
         #region Constructor
         public LocalDinnerViewModel()
         {
             RestaurantCatalog = new ObservableCollection<Restaurant>();
-            RestaurantCatalog.Add(new Restaurant(1,"Restaurant Ilden", "Roskilde", "Grillbuffet", 100, "+45 46141300"));
+            RestaurantCatalog.Add(new Restaurant(1,"Restaurant Ilden", "Roskilde", "Grillbuffet", 100));
         }
         #endregion
 
@@ -44,7 +43,7 @@ namespace LocalDinner.ViewModel
 
         public void AddRestaurant()
         {
-            RestaurantCatalog.Add(new Restaurant(Id, Name, City, Category, NumberOfSeats, Telephone));
+            RestaurantCatalog.Add(new Restaurant(Id, Name, City, Category, NoOfSeats));
         }
 
         public void RemoveRestaurant()
