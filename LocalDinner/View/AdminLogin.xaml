@@ -68,7 +68,16 @@
                 Height="824"
                 Margin="0,166,0,0"
                 HorizontalAlignment="Left"
-                VerticalAlignment="Top" />
+                VerticalAlignment="Top" >
+                <StackPanel HorizontalAlignment="Left" Height="355" Margin="505,100,0,0" Width="447" Background="#FFAAB6CE">
+                    <TextBlock TextWrapping="Wrap" Text="Admin Login" FontSize="18"/>
+                    <TextBox TextWrapping="Wrap" Text=""/>
+                    <TextBlock TextWrapping="Wrap" Text="Password" Margin="0,0,-1053,0"/>
+                    <PasswordBox/>
+                    <Button Content="Login" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="42,20,233,0"/>
+                    <Button Content="Cancel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="225,-33,50,0"/>
+                </StackPanel>
+            </StackPanel>
             <Button
                 x:Name="BtnDansk"
                 Width="110"
@@ -107,9 +116,9 @@
             </Button>
             <Button
                 x:Name="BtnAdminLogin"
-                Width="96"
-                Height="88"
-                Margin="1383,19,0,0"
+                Width="142"
+                Height="134"
+                Margin="656,120,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Content="">
