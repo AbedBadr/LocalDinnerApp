@@ -89,8 +89,12 @@
                     <Run Text="d man øn"/>
                     <Run Text="s"/>
                     <Run Text="ker. "/>
-                    <Run Text="Vi adskiller os fra ligne apps og hjemmesider, fordi vi tilbyder vores kunder fuld anonymitet når de reserverer bord fra "/>
-                    <Run Text="Local Dinner. Der bliver derfor ikke gemt nogen personligdata fra kunderne, "/>
+                    <Run Text="Vi adskiller os fra ligne"/>
+                    <Run Text="nde"/>
+                    <Run Text=" apps og hjemmesider, fordi vi tilbyder vores kunder fuld anonymitet når de reserverer bord fra "/>
+                    <Run Text="Local Dinner. Der bliver derfor ikke gemt nogen personlig"/>
+                    <Run Text="e "/>
+                    <Run Text="data fra kunderne, "/>
                     <Run Text="og det mener vi, hos Local Dinner, er vigtigt, fordi det værner om den personlige frihed"/>
                     <Run Text="."/>
                 </TextBlock>
