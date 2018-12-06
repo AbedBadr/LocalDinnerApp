@@ -72,7 +72,7 @@
                 <TextBlock
                     FontSize="24"
                     SelectionChanged="TextBlock_SelectionChanged"
-                    TextWrapping="Wrap" FontStyle="Italic" FontFamily="Cambria" FontWeight="Bold" Height="166" Margin="21,0,0,0">
+                    TextWrapping="Wrap" FontStyle="Italic" FontFamily="Cambria" FontWeight="Bold" Height="372" Margin="21,0,562,0">
                     <Run Text="Local Dinner ApS er stiftet i 2017 af Michel, Maher, Abed og Alexander. Vi har været kammerater siden studietiden, hvor vi læste "/>
                     <Run Text="til "/>
                     <Run Text="datamatikere. Vi er alle 4 utroligt madglade"/>
@@ -94,7 +94,6 @@
                     <Run Text="og det mener vi, hos Local Dinner, er vigtigt, fordi det værner om den personlige frihed"/>
                     <Run Text="."/>
                 </TextBlock>
-                <Image x:Name="Maher" HorizontalAlignment="Left" Height="215" Margin="1072,0,0,0" Width="310"/>
             </StackPanel>
             <Button
                 x:Name="BtnDansk"
