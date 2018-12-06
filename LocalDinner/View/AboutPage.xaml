@@ -94,6 +94,7 @@
                     <Run Text="og det mener vi, hos Local Dinner, er vigtigt, fordi det værner om den personlige frihed"/>
                     <Run Text="."/>
                 </TextBlock>
+                <Image x:Name="Maher" HorizontalAlignment="Left" Height="191" Margin="988,0,0,0" Width="262"/>
             </StackPanel>
             <Button
                 x:Name="BtnDansk"
