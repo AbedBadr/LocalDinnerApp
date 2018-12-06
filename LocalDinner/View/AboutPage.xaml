@@ -70,9 +70,9 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top">
                 <TextBlock
-                    FontSize="24"
+                    FontSize="36"
                     SelectionChanged="TextBlock_SelectionChanged"
-                    TextWrapping="Wrap" FontStyle="Italic" FontFamily="Cambria" FontWeight="Bold" Height="372" Margin="21,0,562,0">
+                    TextWrapping="Wrap" FontStyle="Italic" FontFamily="Cambria" FontWeight="Bold" Height="805" Margin="21,0,794,0">
                     <Run Text="Local Dinner ApS er stiftet i 2017 af Michel, Maher, Abed og Alexander. Vi har været kammerater siden studietiden, hvor vi læste "/>
                     <Run Text="til "/>
                     <Run Text="datamatikere. Vi er alle 4 utroligt madglade"/>
@@ -94,7 +94,14 @@
                     <Run Text="og det mener vi, hos Local Dinner, er vigtigt, fordi det værner om den personlige frihed"/>
                     <Run Text="."/>
                 </TextBlock>
-                <Image x:Name="Maher" HorizontalAlignment="Left" Height="191" Margin="988,0,0,0" Width="262"/>
+                <Image x:Name="Abed" HorizontalAlignment="Left" Height="249" Margin="850,-1332,0,0" Width="260" Source="ms-appx:///Assets/3333333abed.png"/>
+                <Image x:Name="Maher1" HorizontalAlignment="Left" Height="204" Margin="1210,-1280,0,0" Width="243" Source="ms-appx:///Assets/Maher.PNG" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="45.304"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image HorizontalAlignment="Left" Height="240" Margin="863,-539,0,0" Width="263" Source="ms-appx:///Assets/michel.PNG"/>
+                <Image HorizontalAlignment="Left" Height="238" Margin="1195,-536,0,0" Width="236" Source="ms-appx:///Assets/Alex.PNG"/>
             </StackPanel>
             <Button
                 x:Name="BtnDansk"
