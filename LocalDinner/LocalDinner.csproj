@@ -148,6 +148,7 @@
     <None Include="LocalDinner_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\3333333abed.png" />
     <Content Include="Assets\Aalborg.png" />
     <Content Include="Assets\admin login.png" />
     <Content Include="Assets\backlove.png" />
@@ -160,6 +161,8 @@
     <Content Include="Assets\Høltzer restaurant.png" />
     <Content Include="Assets\JamJam Restau.png" />
     <Content Include="Assets\København.png" />
+    <Content Include="Assets\Maher.PNG" />
+    <Content Include="Assets\michel.PNG" />
     <Content Include="Assets\Nautilus.png" />
     <Content Include="Assets\Odense.png" />
     <Content Include="Assets\Restaurant MOER.png" />
@@ -175,6 +178,7 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="View\Alex.PNG" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

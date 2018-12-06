@@ -94,14 +94,14 @@
                     <Run Text="og det mener vi, hos Local Dinner, er vigtigt, fordi det værner om den personlige frihed"/>
                     <Run Text="."/>
                 </TextBlock>
-                <Image x:Name="Abed" HorizontalAlignment="Left" Height="249" Margin="850,-1332,0,0" Width="260" Source="ms-appx:///Assets/3333333abed.png"/>
-                <Image x:Name="Maher1" HorizontalAlignment="Left" Height="204" Margin="1210,-1280,0,0" Width="243" Source="ms-appx:///Assets/Maher.PNG" RenderTransformOrigin="0.5,0.5">
+                <Image HorizontalAlignment="Left" Height="386" Margin="1175,-454,0,0" Width="300" Source="ms-appx:///Assets/michel.PNG"/>
+                <Image x:Name="Alex" HorizontalAlignment="Left" Height="306" Margin="812,-461,0,0" Width="292" Source="Alex.PNG"/>
+                <Image x:Name="Maher" HorizontalAlignment="Left" Height="246" Margin="1185,-1251,0,0" Width="276" Source="ms-appx:///Assets/Maher.PNG" RenderTransformOrigin="0.5,0.5">
                     <Image.RenderTransform>
-                        <CompositeTransform Rotation="45.304"/>
+                        <CompositeTransform Rotation="46.293"/>
                     </Image.RenderTransform>
                 </Image>
-                <Image HorizontalAlignment="Left" Height="240" Margin="863,-539,0,0" Width="263" Source="ms-appx:///Assets/michel.PNG"/>
-                <Image HorizontalAlignment="Left" Height="238" Margin="1195,-536,0,0" Width="236" Source="ms-appx:///Assets/Alex.PNG"/>
+                <Image x:Name="Abed" HorizontalAlignment="Left" Height="268" Margin="807,-1267,0,0" Width="312" Source="ms-appx:///Assets/3333333abed.png" NineGrid="0"/>
             </StackPanel>
             <Button
                 x:Name="BtnDansk"
