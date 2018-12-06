@@ -94,14 +94,24 @@
                     <Run Text="og det mener vi, hos Local Dinner, er vigtigt, fordi det værner om den personlige frihed"/>
                     <Run Text="."/>
                 </TextBlock>
+                <TextBlock x:Name="Maher1" TextWrapping="Wrap" Height="56" Margin="1223,-824,73,0" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria">
+                    <Run Text="Maher"/>
+                    <Run Text=" Khachehan"/>
+                </TextBlock>
                 <Image HorizontalAlignment="Left" Height="386" Margin="1175,-454,0,0" Width="300" Source="ms-appx:///Assets/michel.PNG"/>
-                <Image x:Name="Alex" HorizontalAlignment="Left" Height="306" Margin="812,-461,0,0" Width="292" Source="Alex.PNG"/>
-                <Image x:Name="Maher" HorizontalAlignment="Left" Height="246" Margin="1185,-1251,0,0" Width="276" Source="ms-appx:///Assets/Maher.PNG" RenderTransformOrigin="0.5,0.5">
+                <Image x:Name="Alex" HorizontalAlignment="Left" Height="306" Margin="812,-461,0,0" Width="292" Source="ms-appx:///Assets/Alex.PNG"/>
+                <Image x:Name="Maher" HorizontalAlignment="Left" Height="230.798" Margin="1192.952,-1251,0,0" Width="260.096" Source="ms-appx:///Assets/Maher.PNG" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                     <Image.RenderTransform>
                         <CompositeTransform Rotation="46.293"/>
                     </Image.RenderTransform>
                 </Image>
-                <Image x:Name="Abed" HorizontalAlignment="Left" Height="268" Margin="807,-1267,0,0" Width="312" Source="ms-appx:///Assets/3333333abed.png" NineGrid="0"/>
+                <Image x:Name="Abed" HorizontalAlignment="Left" Height="308" Margin="807,-1267,0,0" Width="312" Source="ms-appx:///Assets/3333333abed.png" NineGrid="0"/>
+                <TextBlock x:Name="Abed1" HorizontalAlignment="Left" Height="40" Margin="813,-844,0,0" TextWrapping="Wrap" Width="266" FontFamily="Cambria" FontWeight="Bold" FontStyle="Italic" FontSize="20">
+                    <Run Text="Abed "/>
+                    <Run Text="El-Rahim Badr"/>
+                </TextBlock>
+                <TextBlock x:Name="Alex1" TextWrapping="Wrap" Text="Alexander Rasmussen" Height="72" Margin="819,-63,414,0" FontWeight="Bold" FontStyle="Italic" FontSize="20" FontFamily="Cambria"/>
+                <TextBlock x:Name="Michel" TextWrapping="Wrap" Text="Michel Møs Arbirk" Height="44" Margin="1184,-99,0,0" Padding="0" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="20"/>
             </StackPanel>
             <Button
                 x:Name="BtnDansk"
@@ -153,6 +163,7 @@
             </Button>
 
         </Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
