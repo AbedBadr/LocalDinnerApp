@@ -150,6 +150,10 @@
     <None Include="LocalDinner_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\47319717_770550963319163_3414408763057111040_n.png" />
+    <Content Include="Assets\47680765_2299566973597989_7610526343062618112_n.png" />
+    <Content Include="Assets\47684862_591658954615296_6614267966760419328_n.png" />
+    <Content Include="Assets\47685514_315653352494674_5590329041631576064_n.png" />
     <Content Include="Assets\Aalborg.png" />
     <Content Include="Assets\admin login.png" />
     <Content Include="Assets\Barock Restaurant.png" />

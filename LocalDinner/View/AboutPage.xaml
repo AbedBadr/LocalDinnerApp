@@ -70,14 +70,52 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top">
                 <TextBlock
-                    FontSize="22"
+                    FontSize="36"
                     SelectionChanged="TextBlock_SelectionChanged"
-                    TextWrapping="Wrap">
-                    <Run Text="Local D" />
-                    <Run Text="i" />
-                    <Run Text="nner ApS er stiftet i 2017 af de 4 venner og datamatikere Miche" />
-                    <Run Text="l, Maher, Abed og Alex. " />
+                    TextWrapping="Wrap" FontStyle="Italic" FontFamily="Cambria" FontWeight="Bold" Height="805" Margin="21,0,794,0">
+                    <Run Text="Local Dinner ApS er stiftet i 2017 af Michel, Maher, Abed og Alexander. Vi har været kammerater siden studietiden, hvor vi læste "/>
+                    <Run Text="til "/>
+                    <Run Text="datamatikere. Vi er alle 4 utroligt madglade"/>
+                    <Run Text=", samtidig med at vi deler en vis interesse inden for IT."/>
+                    <Run Text=" "/>
+                    <LineBreak/>
+                    <Run Text="Vores fælles interesser var derfor grundlaget for opstarten af Local Dinn"/>
+                    <Run Text="er, "/>
+                    <Run Text="som er en app "/>
+                    <Run Text="hvor man hurtigt og nemt "/>
+                    <Run Text="kan få et "/>
+                    <Run Text="overblik over spisesteder det pågælende s"/>
+                    <Run Text="te"/>
+                    <Run Text="d man øn"/>
+                    <Run Text="s"/>
+                    <Run Text="ker. "/>
+                    <Run Text="Vi adskiller os fra ligne"/>
+                    <Run Text="nde"/>
+                    <Run Text=" apps og hjemmesider, fordi vi tilbyder vores kunder fuld anonymitet når de reserverer bord fra "/>
+                    <Run Text="Local Dinner. Der bliver derfor ikke gemt nogen personlig"/>
+                    <Run Text="e "/>
+                    <Run Text="data fra kunderne, "/>
+                    <Run Text="og det mener vi, hos Local Dinner, er vigtigt, fordi det værner om den personlige frihed"/>
+                    <Run Text="."/>
                 </TextBlock>
+                <TextBlock x:Name="Maher1" TextWrapping="Wrap" Height="56" Margin="1223,-824,73,0" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria">
+                    <Run Text="Maher"/>
+                    <Run Text=" Khachehan"/>
+                </TextBlock>
+                <Image HorizontalAlignment="Left" Height="386" Margin="1175,-454,0,0" Width="300" Source="ms-appx:///Assets/47319717_770550963319163_3414408763057111040_n.png"/>
+                <Image x:Name="Alex" HorizontalAlignment="Left" Height="306" Margin="812,-461,0,0" Width="292" Source="ms-appx:///Assets/47685514_315653352494674_5590329041631576064_n.png"/>
+                <Image x:Name="Maher" HorizontalAlignment="Left" Height="230.798" Margin="1192.952,-1251,0,0" Width="260.096" Source="ms-appx:///Assets/47680765_2299566973597989_7610526343062618112_n.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="46.293"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="Abed" HorizontalAlignment="Left" Height="308" Margin="807,-1267,0,0" Width="312" Source="ms-appx:///Assets/47684862_591658954615296_6614267966760419328_n.png" NineGrid="0"/>
+                <TextBlock x:Name="Abed1" HorizontalAlignment="Left" Height="40" Margin="813,-844,0,0" TextWrapping="Wrap" Width="266" FontFamily="Cambria" FontWeight="Bold" FontStyle="Italic" FontSize="20">
+                    <Run Text="Abed "/>
+                    <Run Text="El-Rahim Badr"/>
+                </TextBlock>
+                <TextBlock x:Name="Alex1" TextWrapping="Wrap" Text="Alexander Rasmussen" Height="72" Margin="819,-63,414,0" FontWeight="Bold" FontStyle="Italic" FontSize="20" FontFamily="Cambria"/>
+                <TextBlock x:Name="Michel" TextWrapping="Wrap" Text="Michel Møs Arbirk" Height="44" Margin="1184,-99,0,0" Padding="0" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="20"/>
             </StackPanel>
             <Button
                 x:Name="BtnDansk"
@@ -129,6 +167,7 @@
             </Button>
 
         </Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
