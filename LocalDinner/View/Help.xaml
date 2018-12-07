@@ -54,7 +54,80 @@
                 Height="824"
                 Margin="0,166,0,0"
                 HorizontalAlignment="Left"
-                VerticalAlignment="Top" />
+                VerticalAlignment="Top">
+                <TextBlock
+                    x:Name="FAQ_block"
+                    Width="835"
+                    Height="816"
+                    Margin="29,0,0,0"
+                    HorizontalAlignment="Left"
+                    FontSize="36"
+                    TextWrapping="Wrap">
+                    <Run Text="Frequently asked questions- FAQ" />
+                    <Run Text="." />
+                    <LineBreak />
+                    <Run Text="" />
+                    <LineBreak />
+                    <Run FontSize="22" Text="Q: " />
+                    <Run
+                        FontSize="22"
+                        FontStyle="Italic"
+                        FontWeight="Bold"
+                        Text="How do i book a table?" />
+                    <LineBreak />
+                    <Run FontSize="22" Text="A: It's easy! All you have to do is to find your favourite restaurant. Then you select how many persons who will be attending, time and date of course. And press Book :)" />
+                    <LineBreak />
+                    <Run FontSize="22" />
+                    <LineBreak />
+                    <Run FontSize="22" />
+                    <LineBreak />
+                    <Run FontSize="22" Text="Q: " />
+                    <Run
+                        FontSize="22"
+                        FontStyle="Italic"
+                        FontWeight="Bold"
+                        Text="Why should i choose your services?" />
+                    <LineBreak />
+                    <Run FontSize="22" Text="A: We have the best overview of restaurants in town, you will be able to see if there are any tables left and read about the restaurants before you book a table. And, you wlll be doing it all anonymously!" />
+                    <LineBreak />
+                    <Run FontSize="22" />
+                    <LineBreak />
+                    <Run FontSize="22" Text="Q: " />
+                    <Run
+                        FontSize="22"
+                        FontStyle="Italic"
+                        FontWeight="Bold"
+                        Text="How do i know you wont keep any information about me?" />
+                    <LineBreak />
+                    <Run FontSize="22" Text="A: Simple. We will never ever ask you about any personal information about you!" />
+                    <LineBreak />
+                    <Run FontSize="22" />
+                    <LineBreak />
+                    <Run FontSize="22" Text="Q: " />
+                    <Run
+                        FontSize="22"
+                        FontStyle="Italic"
+                        FontWeight="Bold"
+                        Text="I have a specific question and it's not listed here, how do i get that answered?" />
+                    <LineBreak />
+                    <Run FontSize="22" Text="A: If you look to the right on your screen you will see our contact information. Our support team strive to answer all question within 6 hours of emailing us. And of course you can call us everyday from 10:00 - 23:00." />
+                    <LineBreak />
+                    <Run FontSize="22" />
+                    <LineBreak />
+                    <Run FontSize="22" Text="Q: " />
+                    <Run
+                        FontSize="22"
+                        FontStyle="Italic"
+                        FontWeight="Bold"
+                        Text="Will you charge me for any of this?" />
+                    <LineBreak />
+                    <Run FontSize="22" Text="A: NO! It's absolutly Free !" />
+                    <LineBreak />
+                    <Run />
+                    <LineBreak />
+                    <Run />
+                </TextBlock>
+            </StackPanel>
             <Button
                 x:Name="BtnDansk"
                 Width="110"
@@ -103,6 +176,67 @@
                     <ImageBrush ImageSource="ms-appx:///Assets/admin login.png" Stretch="Fill" />
                 </Button.Background>
             </Button>
+            <Button
+                x:Name="BTNEmail"
+                Width="267"
+                Height="222"
+                Margin="1086,153,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/Emaillogo.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="BTNPhone"
+                Width="188"
+                Height="172"
+                Margin="1141,505,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="">
+                <Button.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/phonelogo.png" Stretch="Fill" />
+                </Button.Background>
+            </Button>
+            <TextBlock
+                x:Name="Email_Phone_textblock"
+                Width="524"
+                Height="620"
+                Margin="1000,340,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                FontFamily="Microsoft YaHei"
+                FontSize="36"
+                TextWrapping="Wrap">
+                <Run Text="                " />
+                <Run FontWeight="Bold" Text="Email" />
+                <Run Text=" Support@LocalDinner.com" />
+                <LineBreak />
+                <Run FontSize="24" Text="        " />
+                <Run FontSize="24" Text="We will reply within 6 hours!" />
+                <LineBreak />
+                <Run />
+                <LineBreak />
+                <Run />
+                <LineBreak />
+                <Run />
+                <LineBreak />
+                <Run />
+                <LineBreak />
+                <Run />
+                <LineBreak />
+                <Run Text="               " />
+                <Run Text=" " />
+                <Run FontWeight="Bold" Text="Phone" />
+                <LineBreak />
+                <Run Text="        " />
+                <Run Text="+45 23 47 47 47" />
+                <LineBreak />
+                <Run FontSize="24" Text="        " />
+                <Run FontSize="24" Text="10:00 - 23:00 - 7 days a week" />
+            </TextBlock>
 
         </Grid>
 

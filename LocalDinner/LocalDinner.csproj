@@ -150,6 +150,7 @@
     <Content Include="Assets\Barock Restaurant.png" />
     <Content Include="Assets\BUTTON ABTHELPBACK.png" />
     <Content Include="Assets\EGO restaurant.png" />
+    <Content Include="Assets\Emaillogo.png" />
     <Content Include="Assets\Flag_of_Denmark.png" />
     <Content Include="Assets\Geranium restau.png" />
     <Content Include="Assets\german glag.png" />
@@ -158,6 +159,7 @@
     <Content Include="Assets\København.png" />
     <Content Include="Assets\Nautilus.png" />
     <Content Include="Assets\Odense.png" />
+    <Content Include="Assets\phonelogo.png" />
     <Content Include="Assets\Restaurant MOER.png" />
     <Content Include="Assets\Riverside Restaurant.png" />
     <Content Include="Assets\Roskilde.png" />
