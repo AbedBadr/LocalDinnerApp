@@ -119,8 +119,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\Calendar.cs" />
+    <Compile Include="Label.xaml.cs">
+      <DependentUpon>Label.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Persistency\PersistencyService.cs" />
+    <Compile Include="Model\RestaurantCatalog.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\LocalDinnerViewModel.cs" />
     <Compile Include="View\AboutPage.xaml.cs">
@@ -145,24 +148,28 @@
     <None Include="LocalDinner_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\3333333abed.png" />
     <Content Include="Assets\Aalborg.png" />
     <Content Include="Assets\admin login.png" />
+    <Content Include="Assets\Alex.PNG" />
+    <Content Include="Assets\backlove.png" />
     <Content Include="Assets\Barock Restaurant.png" />
     <Content Include="Assets\BUTTON ABTHELPBACK.png" />
     <Content Include="Assets\EGO restaurant.png" />
-    <Content Include="Assets\Emaillogo.png" />
     <Content Include="Assets\Flag_of_Denmark.png" />
     <Content Include="Assets\Geranium restau.png" />
     <Content Include="Assets\german glag.png" />
     <Content Include="Assets\Høltzer restaurant.png" />
     <Content Include="Assets\JamJam Restau.png" />
     <Content Include="Assets\København.png" />
+    <Content Include="Assets\Maher.PNG" />
+    <Content Include="Assets\michel.PNG" />
     <Content Include="Assets\Nautilus.png" />
     <Content Include="Assets\Odense.png" />
-    <Content Include="Assets\phonelogo.png" />
     <Content Include="Assets\Restaurant MOER.png" />
     <Content Include="Assets\Riverside Restaurant.png" />
     <Content Include="Assets\Roskilde.png" />
+    <Content Include="Assets\SSL-Secure-Connection.png" />
     <Content Include="Assets\United-Kingdom-Flag-Transparent.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -178,6 +185,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Label.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\AboutPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

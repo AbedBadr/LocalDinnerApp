@@ -31,6 +31,7 @@
                 Margin="20,27,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
+                Click="BtnAbout_OnClick"
                 Content="About"
                 FontSize="20">
                 <Button.Background>
@@ -76,16 +77,6 @@
                     FontSize="36"
                     SelectionChanged="TextBlock_SelectionChanged"
                     Text="Search for Restaurants via City/Zipcode"
-                    TextWrapping="Wrap" />
-                <TextBox
-                    x:Name="Enter_city_name_here"
-                    Width="214"
-                    Height="48"
-                    Margin="643,0"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Text="Enter City/Zip here"
-                    TextChanged="TextBox_TextChanged"
                     TextWrapping="Wrap" />
                 <TextBlock
                     x:Name="Biggest_Cities"
@@ -136,7 +127,7 @@
                     x:Name="BtnAalborg"
                     Width="316"
                     Height="172"
-                    Margin="1137,-171,0,0"
+                    Margin="1133,-171,0,0"
                     HorizontalAlignment="Left"
                     Content="Aalborg"
                     FontSize="36"
@@ -303,11 +294,20 @@
                 Margin="1383,19,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
+                Click="BtnAdminLogin_OnClick"
                 Content="">
+
                 <Button.Background>
                     <ImageBrush ImageSource="ms-appx:///Assets/admin login.png" Stretch="Fill" />
                 </Button.Background>
             </Button>
+            <Image
+                Width="100"
+                Height="100"
+                Margin="10,945,0,-45"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="ms-appx:///Assets/SSL-Secure-Connection.png" />
 
         </Grid>
     </ScrollViewer>

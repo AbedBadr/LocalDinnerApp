@@ -14,6 +14,7 @@ namespace LocalDinner.ViewModel
     {
         #region Instance fields
         private ObservableCollection<Restaurant> _restaurantCatalog;
+        private ObservableCollection<Restaurant> _restaurantCatalogSearch;
         #endregion 
 
         #region Properties
