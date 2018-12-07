@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LocalDinner.Model;
 
 namespace LocalDinner
 {
@@ -13,19 +14,20 @@ namespace LocalDinner
         public int Id { get; set; }
         public string Name { get; set; }
         public string City { get; set; }
-        public string Category { get; set; }
         public int NoOfSeats { get; set; }
+
+        //public Calendar Calendar { get; set; }
         #endregion
 
         #region Constructor
         
-        public Restaurant(int id, string name, string city, string category, int noOfSeats)
+        public Restaurant(int id, string name, string city, int noOfSeats /*, Calendar calendar*/) 
         {
             Id = id;
             Name = name;
             City = city;
-            Category = category;
             NoOfSeats = noOfSeats;
+            //Calendar = calendar;
         }
         #endregion
 
@@ -33,7 +35,7 @@ namespace LocalDinner
 
         public override string ToString()
         {
-            return $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(City)}: {City}, {nameof(Category)}: {Category}, {nameof(NoOfSeats)}: {NoOfSeats}";
+            return $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(City)}: {City}, {nameof(NoOfSeats)}: {NoOfSeats}";
         }
         #endregion 
     }

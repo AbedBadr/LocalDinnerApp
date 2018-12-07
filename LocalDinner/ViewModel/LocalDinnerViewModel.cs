@@ -7,49 +7,56 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using LocalDinner.Annotations;
+using LocalDinner.Model;
 
 namespace LocalDinner.ViewModel
 {
     class LocalDinnerViewModel : INotifyPropertyChanged
     {
         #region Instance fields
-        private ObservableCollection<Restaurant> _restaurantCatalog;
+        //private ObservableCollection<Restaurant> _restaurantCatalog;
         #endregion 
 
         #region Properties
 
-        public ObservableCollection<Restaurant> RestaurantCatalog
+        public RestaurantCatalogSingleton RestaurantCatalogSingleton { get; set; }
+
+        /*public ObservableCollection<Restaurant> RestaurantCatalog
         {
             get { return _restaurantCatalog; }
             set { _restaurantCatalog = value; }
-        }
+        }*/
 
-        public int Id { get; set; }
+        /*
+         public int Id { get; set; }
         public string Name { get; set; }
         public string City { get; set; }
         public string Category { get; set; }
         public int NoOfSeats { get; set; }
+        */
         #endregion
 
         #region Constructor
         public LocalDinnerViewModel()
         {
-            RestaurantCatalog = new ObservableCollection<Restaurant>();
-            RestaurantCatalog.Add(new Restaurant(1,"Restaurant Ilden", "Roskilde", "Grillbuffet", 100));
+            RestaurantCatalogSingleton = RestaurantCatalogSingleton.Instance;
+
+            /*RestaurantCatalog = new ObservableCollection<Restaurant>();
+            RestaurantCatalog.Add(new Restaurant(1,"Restaurant Ilden", "Roskilde", 100));*/
         }
         #endregion
 
         #region Methods
 
-        public void AddRestaurant()
+        /*public void AddRestaurant()
         {
-            RestaurantCatalog.Add(new Restaurant(Id, Name, City, Category, NoOfSeats));
-        }
+            RestaurantCatalog.Add(new Restaurant(Id, Name, City, NoOfSeats));
+        }*/
 
-        public void RemoveRestaurant()
+        /*public void RemoveRestaurant()
         {
             RestaurantCatalog.RemoveAt(Id);
-        }
+        }*/
         #endregion
 
         #region PropertyChanged

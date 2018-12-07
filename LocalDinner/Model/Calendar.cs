@@ -12,14 +12,16 @@ namespace LocalDinner.Model
 
         public DateTime Dato { get; set; }
         public int AktuelAntalPladser { get; set; }
+        private Reservation reservation1;
 
         #endregion
 
         #region Constructor
 
-        public Calendar()
+        public Calendar(Reservation reservation)
         {
             Dato = DateTime.Today;
+            reservation1 = reservation;
 
         }
         #endregion
