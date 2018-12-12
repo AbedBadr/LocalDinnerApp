@@ -15,15 +15,14 @@
     </Page.DataContext>
 
     <Grid>
-        <GridView HorizontalAlignment="Left" Height="727" Margin="965,116,0,0" VerticalAlignment="Top" Width="372"/>
-        <Button Content="Roskilde" HorizontalAlignment="Left" Height="155" Margin="86,107,0,0" VerticalAlignment="Top" Width="320">
+        <GridView HorizontalAlignment="Left" Height="727" Margin="965,116,0,0" VerticalAlignment="Top" Width="372" ItemsSource="{Binding RestaurantCatalogSingleton.RestaurantsCity, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FontSize="14"/>
+        <Button Content="Søg" HorizontalAlignment="Left" Height="155" Margin="552,403,0,0" VerticalAlignment="Top" Width="320" FontSize="48">
             <Interactivity:Interaction.Behaviors>
                 <Core:EventTriggerBehavior EventName="Click">
-                    <Core:CallMethodAction MethodName="RoskildeRestauranter"/>
+                    <Core:CallMethodAction MethodName="FindRestaurant" TargetObject="{Binding RestaurantCatalogSingleton, Mode=OneWay}"/>
                 </Core:EventTriggerBehavior>
             </Interactivity:Interaction.Behaviors>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Height="155" Margin="86,332,0,0" VerticalAlignment="Top" Width="320"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="155" Margin="86,560,0,0" VerticalAlignment="Top" Width="320"/>
+        <TextBox HorizontalAlignment="Left" Height="140" Margin="552,200,0,0" TextWrapping="Wrap" Text="{Binding RestaurantCatalogSingleton.CityName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="320" FontSize="48" PlaceholderText="Søg"/>
     </Grid>
 </Page>

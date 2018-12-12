@@ -26,6 +26,7 @@ namespace LocalDinner.Model
 
         public ObservableCollection<Restaurant> Restaurants { get; set; }
         public ObservableCollection<Restaurant> RestaurantsCity { get; set; }
+        public string CityName { get; set; }
         #endregion
 
         #region Constructor
@@ -47,13 +48,19 @@ namespace LocalDinner.Model
             Restaurants.Add(new Restaurant(3, "Moehr", "Roskilde", 60));
             Restaurants.Add(new Restaurant(4, "Bone's", "Roskilde", 50));
             Restaurants.Add(new Restaurant(5, "La Rustica", "Roskilde", 60));
+
+            Restaurants.Add(new Restaurant(6, "Maher", "København", 60));
+            Restaurants.Add(new Restaurant(7, "Michel", "København", 70));
+            Restaurants.Add(new Restaurant(8, "Alex", "København", 50));
+
+
         }
 
-        public void RoskildeRestauranter(string cityName)
+        public void FindRestaurant()
         {
             foreach (Restaurant restaurant in Restaurants)
             {
-                if (restaurant.City == cityName)
+                if (restaurant.City == CityName)
                     RestaurantsCity.Add(restaurant);
             }
         }
