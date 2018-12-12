@@ -15,6 +15,7 @@ namespace LocalDinner
         public string Name { get; set; }
         public string City { get; set; }
         public int NoOfSeats { get; set; }
+        private Calendar Calendar1;
 
         //public Calendar Calendar { get; set; }
         #endregion
@@ -37,6 +38,12 @@ namespace LocalDinner
         {
             return $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(City)}: {City}, {nameof(NoOfSeats)}: {NoOfSeats}";
         }
-        #endregion 
+        #endregion
+
+        #region Methods
+
+        
+
+        #endregion
     }
 }

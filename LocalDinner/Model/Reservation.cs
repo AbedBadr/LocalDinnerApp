@@ -11,6 +11,7 @@ namespace LocalDinner.Model
         #region Instance Fields
 
         private int _bookingNr = 0;
+
         #endregion
 
         #region Properties
