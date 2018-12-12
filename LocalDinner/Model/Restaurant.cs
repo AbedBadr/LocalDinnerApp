@@ -17,18 +17,17 @@ namespace LocalDinner
         public int NoOfSeats { get; set; }
         private Calendar Calendar1;
 
-        //public Calendar Calendar { get; set; }
         #endregion
 
         #region Constructor
         
-        public Restaurant(int id, string name, string city, int noOfSeats /*, Calendar calendar*/) 
+        public Restaurant(int id, string name, string city, int noOfSeats) 
         {
             Id = id;
             Name = name;
             City = city;
-            NoOfSeats = noOfSeats;
-            //Calendar = calendar;
+            Calendar1.Reservation1.AntalPladser = noOfSeats;
+            NoOfSeats = Calendar1.Reservation1.AntalPladser;
         }
         #endregion
 
@@ -40,10 +39,6 @@ namespace LocalDinner
         }
         #endregion
 
-        #region Methods
-
         
-
-        #endregion
     }
 }

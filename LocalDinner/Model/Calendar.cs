@@ -12,8 +12,9 @@ namespace LocalDinner.Model
 
         public DateTime Dato { get; set; }
         public int AktuelAntalPladser { get; set; }
-        private Reservation reservation1;
+        private Reservation _reservation1; 
 
+        public Reservation Reservation1 { get; set; }
         #endregion
 
         #region Constructor

@@ -10,19 +10,14 @@ namespace LocalDinner.Model
     {
         #region Instance Fields
 
-        private int _bookingNr = 0;
-
         #endregion
 
         #region Properties
 
         public DateTime Dato { get; set; }
-        public int BookingNr
-        {
-            get { return _bookingNr; }
-            set { _bookingNr = value; }
-        }
+        public int BookingNr { get; set; }
         public int AntalPladser { get; set; }
+        public string Message { get; set; }
         #endregion
 
         #region Constructor
@@ -30,14 +25,24 @@ namespace LocalDinner.Model
         public Reservation(int antalPladser)
         {
             Dato = DateTime.Today;
-            BookingNr = BookingNr++;
+            BookingNr = 0;
             AntalPladser = antalPladser;
         }
         #endregion
 
         #region Methods
 
+        public void Booking(int antalPladser, int AntalBooked)
+        {
+            if (AntalBooked < antalPladser)
+            {
+                antalPladser = antalPladser - AntalBooked;
+                BookingNr++;
+            }
 
+            if (AntalBooked > antalPladser)
+                Message = "Der er ikke nok ledige pladser";
+        }
         #endregion
     }
 }
