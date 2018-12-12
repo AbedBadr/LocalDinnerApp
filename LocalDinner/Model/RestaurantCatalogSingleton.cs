@@ -58,6 +58,7 @@ namespace LocalDinner.Model
 
         public void FindRestaurant()
         {
+            RestaurantsCity.Clear();
             foreach (Restaurant restaurant in Restaurants)
             {
                 if (restaurant.City == CityName)
