@@ -7,66 +7,69 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using LocalDinner.Annotations;
+using LocalDinner.Helpers;
 using LocalDinner.Model;
 
 namespace LocalDinner.ViewModel
 {
     class LocalDinnerViewModel : INotifyPropertyChanged
     {
-        #region Instance fields
-        //private ObservableCollection<Restaurant> _restaurantCatalog;
-        #endregion 
+        public RestaurantSingleton RestaurantSingleton { get; set; }
 
-        #region Properties
+        private Restaurant _newRestaurant;
+        private Restaurant _selectedRestaurant;
 
-        public RestaurantCatalogSingleton RestaurantCatalogSingleton { get; set; }
+        public RelayCommand AddCommand { get; set; }
+        public RelayCommand DeleteCommand { get; set; }
+        public RelayCommand SaveCommand { get; set; }
 
-        /*public ObservableCollection<Restaurant> RestaurantCatalog
+        public ObservableCollection<Restaurant> RestaurantCatalog
         {
-            get { return _restaurantCatalog; }
-            set { _restaurantCatalog = value; }
-        }*/
+            get { return RestaurantSingleton.Restaurants; }
+            set { RestaurantSingleton.Restaurants = value; }
+        }
 
-        /*
-         public int Id { get; set; }
-        public string Name { get; set; }
-        public string City { get; set; }
-        public string Category { get; set; }
-        public int NoOfSeats { get; set; }
-        */
-        #endregion
+        public Restaurant NewRestaurant
+        {
+            get => _newRestaurant;
+            set
+            {
+                _newRestaurant = value;
+                OnPropertyChanged();
+            }
+        }
 
-        #region Constructor
+        public Restaurant SelectedRestaurant
+        {
+            get => _selectedRestaurant;
+            set
+            {
+                _selectedRestaurant = value;
+                OnPropertyChanged();
+            }
+        }
+
         public LocalDinnerViewModel()
         {
-            RestaurantCatalogSingleton = RestaurantCatalogSingleton.Instance;
+            RestaurantSingleton = RestaurantSingleton.Instance;
 
-            /*RestaurantCatalog = new ObservableCollection<Restaurant>();
-            RestaurantCatalog.Add(new Restaurant(1,"Restaurant Ilden", "Roskilde", 100));*/
+            NewRestaurant = new Restaurant();
+
+            AddCommand = new RelayCommand(() =>
+            {
+                RestaurantCatalog.Add(NewRestaurant);
+            });
+
+            DeleteCommand = new RelayCommand(() => { RestaurantCatalog.Remove(SelectedRestaurant); });
+
+            SaveCommand = new RelayCommand(() => { SelectedRestaurant = null; });
         }
-        #endregion
 
-        #region Methods
-
-        /*public void AddRestaurant()
-        {
-            RestaurantCatalog.Add(new Restaurant(Id, Name, City, NoOfSeats));
-        }*/
-
-        /*public void RemoveRestaurant()
-        {
-            RestaurantCatalog.RemoveAt(Id);
-        }*/
-        #endregion
-
-        #region PropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
 
-        [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        #endregion 
     }
 }

@@ -119,10 +119,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\RelayCommand.cs" />
     <Compile Include="Model\Calendar.cs" />
     <Compile Include="Model\Reservation.cs" />
-    <Compile Include="Model\RestaurantCatalogSingleton.cs" />
-    <Compile Include="Persistency\PersistencyService.cs" />
+    <Compile Include="Singleton\RestaurantSingleton.cs" />
+    <Compile Include="Model\Table.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\LocalDinnerViewModel.cs" />
     <Compile Include="View\AboutPage.xaml.cs">

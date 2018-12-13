@@ -71,21 +71,17 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top">
                 <TextBlock
-                    x:Name="Search_for_restaurants_via_zip_textblock"
                     HorizontalAlignment="Center"
                     FontSize="36"
-                    SelectionChanged="TextBlock_SelectionChanged"
                     Text="Search for Restaurants via City/Zipcode"
                     TextWrapping="Wrap" />
                 <TextBox
-                    x:Name="Enter_city_name_here"
                     Width="214"
                     Height="48"
                     Margin="643,0"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Text="Enter City/Zip here"
-                    TextChanged="TextBox_TextChanged"
                     TextWrapping="Wrap" />
                 <TextBlock
                     x:Name="Biggest_Cities"

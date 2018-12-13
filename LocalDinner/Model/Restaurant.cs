@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using LocalDinner.Model;
 
@@ -9,36 +10,20 @@ namespace LocalDinner
 {
     class Restaurant
     {
-        #region Properties
-
         public int Id { get; set; }
         public string Name { get; set; }
         public string City { get; set; }
-        public int NoOfSeats { get; set; }
-        private Calendar Calendar1;
+        public List<Table> Tables { get; set; }
+        public Calendar _Calendar { get; set; }
 
-        #endregion
+        private static int IdRef = 0;
 
-        #region Constructor
-        
-        public Restaurant(int id, string name, string city, int noOfSeats) 
+        public Restaurant(string name = null, string city = null, int noOfSeats = 0) 
         {
-            Id = id;
+            Id = Interlocked.Increment(ref IdRef);
             Name = name;
             City = city;
-            Calendar1.Reservation1.AntalPladser = noOfSeats;
-            NoOfSeats = Calendar1.Reservation1.AntalPladser;
+            Tables = new List<Table>();
         }
-        #endregion
-
-        #region ToString
-
-        public override string ToString()
-        {
-            return $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(City)}: {City}, {nameof(NoOfSeats)}: {NoOfSeats}";
-        }
-        #endregion
-
-        
     }
 }

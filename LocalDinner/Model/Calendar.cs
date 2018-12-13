@@ -8,26 +8,14 @@ namespace LocalDinner.Model
 {
     class Calendar
     {
-        #region Properties
-
         public DateTime Dato { get; set; }
-        public int AktuelAntalPladser { get; set; }
-        private Reservation _reservation1; 
-
-        public Reservation Reservation1 { get; set; }
-        #endregion
-
-        #region Constructor
-
+        public Reservation Reservation { get; set; } 
+        
         public Calendar(Reservation reservation)
         {
-            Dato = DateTime.Today;
-            reservation1 = reservation;
-
+            Dato = DateTime.Now;
+            Reservation = reservation;
         }
-        #endregion
-
-
     }
 }
 
