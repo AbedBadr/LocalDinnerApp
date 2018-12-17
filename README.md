@@ -1,2 +1,2 @@
 # LocalDinnerApp
-An app for finding restaurants by searching for city or postal code.
+An app for finding restaurants by searching for cities or postal codes.
